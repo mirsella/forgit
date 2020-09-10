@@ -243,7 +243,7 @@ if test -z "FORGIT_BAT_OPTS"
 end
 
 function forgit::ignore
-    if test -d "$FORGIT_GI_REPO_LOCAL"
+    if not test -d "$FORGIT_GI_REPO_LOCAL"
         forgit::ignore::update
     end
 
